@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{9a87fbbb-36a5-4d6d-8994-1b05f651b25c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Driver">
+      <UniqueIdentifier>{5676a617-28f7-4add-9dea-0056231826cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inject">
+      <UniqueIdentifier>{fc6c7489-c664-4f1c-83cd-f611b732931b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AES">
+      <UniqueIdentifier>{992a20f9-5363-4cbf-aee1-1af59171e013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Driver\Loader">
+      <UniqueIdentifier>{190656e8-6710-4b7d-a958-535f06425ec0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="driver\Driver.cpp">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="inject\Inject.cpp">
+      <Filter>Inject</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="service.cpp">
+      <Filter>Driver\Loader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils\lazy_importer.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\xor.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\Driver.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="inject\Inject.h">
+      <Filter>Inject</Filter>
+    </ClInclude>
+    <ClInclude Include="sk_crypt.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h" />
+    <ClInclude Include="plus_aes.h">
+      <Filter>AES</Filter>
+    </ClInclude>
+    <ClInclude Include="aes.h">
+      <Filter>AES</Filter>
+    </ClInclude>
+    <ClInclude Include="singleton.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="loader.h" />
+    <ClInclude Include="nt.hpp">
+      <Filter>Driver\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="service.h">
+      <Filter>Driver\Loader</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
